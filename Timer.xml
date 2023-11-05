@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="top">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/AppTitle"
+        android:text="TIMER"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:textColor="#0000FF"/>
+
+    <TextView
+        android:id="@+id/AppDef"
+        android:text="This App works like a Stopwatch which helps to calculate time"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/AppTitle"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="20sp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        />
+    <TextView
+        android:id="@+id/maincount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="00:00:00"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270sp"
+        />
+    <Button
+        android:id="@+id/startbtn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="START"
+        android:onClick="StartAction"
+        android:textSize="15sp"
+        android:layout_below="@+id/maincount"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="50sp"
+        />
+    <Button
+        android:id="@+id/pausebtn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="PAUSE"
+        android:onClick="PauseAction"
+        android:textSize="15sp"
+        android:layout_below="@+id/maincount"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="160sp"
+
+        />
+
+    <Button
+        android:id="@+id/Resetbtn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="RESET"
+        android:onClick="RestAction"
+        android:textSize="15sp"
+        android:layout_below="@+id/maincount"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="270sp"
+        />
+
+</RelativeLayout>
